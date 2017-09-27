@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RecyclerMutilModule</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新内容</string>
+    <string name="pull_to_refresh_release_label">松开立即刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新内容</string>
+
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载内容</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开加载内容</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载内容</string>
+    <string name="pull_to_refresh_from_bottom_no_data_label">没有更多数据了</string>
+</resources>

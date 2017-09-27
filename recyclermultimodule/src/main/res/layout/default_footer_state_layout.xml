@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="62dip"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/refreshImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pull_up"
+            android:scaleType="fitXY" />
+
+        <ProgressBar
+            android:id="@+id/refreshProgressBar"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/loading" />
+
+        <TextView
+            android:id="@+id/refreshTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/pull_to_refresh_from_bottom_pull_label"
+            android:textColor="#878787"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/moreHintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4" />
+
+        <TextView
+            android:id="@+id/hintTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/book_dir_hint"
+            android:drawablePadding="5dip"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip"
+            android:singleLine="true"
+            android:text="@string/pull_to_refresh_from_bottom_no_data_label"
+            android:textColor="#878787"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/emptyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="54dip"/>
+
+</LinearLayout>
